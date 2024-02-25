@@ -1,0 +1,7 @@
+@use 'vars' as *;
+
+.manpower-page{
+    &__control{
+        @include flex(between, center);
+    }
+}

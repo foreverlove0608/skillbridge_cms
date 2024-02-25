@@ -1853,7 +1853,6 @@ Component
   background: #E2E8F0 !important;
   color: #0F1A2A;
 }
-
 /* ====================================================
 Utility
 ==================================================== */
@@ -2434,6 +2433,18 @@ Utility
 .dashboard-content__top-title .number {
   font-size: 2.4rem;
   font-weight: 700;
+}
+
+.manpower-page__control {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 /* ====================================================

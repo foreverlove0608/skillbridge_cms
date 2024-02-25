@@ -1,0 +1,111 @@
+<div class="cms-main">
+    <div class="cms-sidebar">
+        <h1 class="cms-sidebar__logo"><a href="#"><img src="../img/common/logo.png" alt=""></a></h1>
+        <ul class="cms-sidebar__nav">
+            <li class="cms-sidebar__nav-item is-active"><a href="#">Dashboard</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Công ty Nhật cần người</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Công ty cung ứng nhân lực</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Danh sách ứng viên</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Câu hỏi thường gặp</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Quản lý template</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Master data</a></li>
+            <li class="cms-sidebar__nav-item"><a href="#">Cài đặt hệ thống</a></li>
+        </ul>
+    </div>
+    <div class="cms-content">
+        <div class="cms-heading">
+            <h2 class="cms-heading__ttl">Dashboard</h2>
+            <ul class="cms-heading__control">
+                <li class="cms-heading__control-notification"><a href="#"><img src="../img/common/icon-notification.png" alt="" width="40"></a></li>
+                <li class="cms-heading__control-notification"><a href="#"><img src="../img/common/vn.png" alt="" width="24"></a></li>
+                <li class="cms-heading__control-user">
+                    <a href="#" class="wp js-user">
+                        <div class="cms-heading__control-avatar">
+                            <img src="../img/common/avatar.png" alt="">
+                        </div>
+                        <div class="cms-heading__control-info">
+                            <span class="namme">Quản Trị Viên</span>
+                            <span class="position">Super Admintrator</span>
+                        </div>
+                    </a>
+                    <ul class="cms-heading__control-option">
+                        <li><a href="#"><img src="../img/common/ico-changepass.png" width="20" alt="">Đổi mật khẩu</a></li>
+                        <li><a href="#"><img src="../img/common/password-check.png" width="20" alt="">Cấp lại mật khẩu</a></li>
+                        <li><a href="#"><img src="../img/common/logout.png" width="20" alt="">Đăng xuất </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="manpower-page">
+            <div class="manpower-page__control">
+                <ul class="mainpower-page__search">
+                    <li class="mainpower-page__search-field">
+                        <input type="text" class="form-control" placeholder="Tên công ty">
+                    </li>
+                    <li class="mainpower-page__search-field">
+                        <select name="" id="">
+                            <option value="">Trạng thái</option>
+                            <option value="">--</option>
+                            <option value="">--</option>
+                        </select>
+                    </li>
+                </ul>
+                <button class="c-btn__01 c-btn__01---add">Tạo mới</button>
+            </div>
+            <div class="manpower-page__table">
+                <tr>
+                    <th>STT</th>
+                    <th>Mã công ty</th>
+                    <th>Tên</th>
+                    <th>Người đại diện</th>
+                    <th>Email</th>
+                    <th>Ứng viên quan tâm</th>
+                    <th>Thời gian tạo <button class="btn-sort"></button></th>
+                    <th>Trạng thái</th>
+                    <th>Hành động</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>CT000223</td>
+                    <td>The Walt Disney Company</td>
+                    <td>Yuuto Nakamura</td>
+                    <td>companyname@gmail.com</td>
+                    <td>16</td>
+                    <td>01/01/2022 12:21</td>
+                    <td>
+                        <span class="status">Đang hoạt động</span>
+                    </td>
+                    <td>
+                        <button class="btn-action"></button>
+                        <ul class="action-content">
+                            <li><a href="#">Chỉnh sửa</a></li>
+                            <li><a href="#">Xoá</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </div>
+            <div class="manpower-page__footer">
+                <div class="manpower-page__result">Có <strong>150</strong> kết quả</div>
+                <ul class="manpower-page__pagination">
+                    <li class="page-prev"><a href="#"></a></li>
+                    <li class="page"><a href="#">1</a></li>
+                    <li class="page"><a href="#">2</a></li>
+                    <li class="page"><a href="#">3</a></li>
+                    <li class="extents"><span></span></li>
+                    <li class="page"><a href="#">10</a></li>
+                    <li class="page-next"><a href="#"></a></li>
+                </div>
+                <div class="mainpower-page__postperpage">
+                    <select name="" id="">
+                        <option value="5">5 / trang</option>
+                        <option value="10">10 / trang</option>
+                        <option value="15">15 / trang</option>
+                        <option value="20">20 / trang</option>
+                        <option value="25">25 / trang</option>
+                    </select>
+                </div>
+                <div class="manpower-page__goto">Đi đến trang <input type="text" class="form-control"></div>
+            </div>
+        </div>
+    </div>
+</div>
