@@ -1,0 +1,36 @@
+@use 'vars' as *;
+
+.dashboard-content{
+    padding: 24px 30px;
+    &__top{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        box-shadow: 0px 0px 30px 15px rgba(#1A3168, .11);
+        gap: 0 30px;
+        padding: 16px 24px;
+        &-item{
+            @include flex(0, center);
+            border-right: 1px dashed #E6E8EC;
+            &:last-of-type{
+                border-right: none;
+            }
+            .icon{
+                width: 60px;
+            }
+        }
+        &-title{
+            width: calc(100% - 60px);
+            padding-left: 16px;
+            .txt{
+                @include font-size(16);
+                font-family: $font-Averta-Semibold;
+                margin-bottom: 10px;
+                display: block;
+            }
+            .number{
+                @include font-size(24);
+                font-weight: 700;
+            }
+        }
+    }
+}

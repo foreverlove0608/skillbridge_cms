@@ -1,0 +1,431 @@
+@use "vars" as *;
+
+/* ====================================================
+Layout
+==================================================== */
+// .wrapper{
+// 	padding-top: 115px;
+// 	@include mq(tb){
+// 		padding-top: 70px;
+// 	}
+// }
+
+.inner{
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+	@include mq() {
+		width: 100%;
+		padding: 0 5%
+	}
+}
+
+
+
+
+.form-control{
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	border: 1px solid #E2E8F0;
+	padding: 10px 16px;
+	@include font-size(16);
+	appearance: none;
+	&::-ms-input-placeholder { /* Edge 12-18 */
+		color: #CBD4E1;
+	}
+	&::placeholder {
+		color: #CBD4E1;
+	}
+	&--select{
+		background: #fff url(../img/common/arrow-down.png) no-repeat right 15px center/24px 24px;
+	}
+	&--textarea{
+		height: 114px;
+		width: 100%;
+		resize: none;
+	}
+	&--gray{
+		background: linear-gradient(0deg, #F1F4F9, #F1F4F9), linear-gradient(0deg, #CBD4E1, #CBD4E1);
+	}
+}
+
+
+// ====== styles modal user =========
+.c-modal{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(#0F1A2A, .6);
+	z-index: 11;
+	@include flex(center, center);
+	// opacity: 0;
+	// visibility: hidden;
+	@include smooth-transition;
+	&__btn-close{
+		width: 40px;
+		height: 40px;
+		background: url(../img/common/ico-close.png) no-repeat center/100%;
+		top: 100px;
+		right: 100px;
+		position: absolute;
+		cursor: pointer;
+		@include fn-hover;
+		@include mq{
+			bottom: 60px;
+			top: auto;
+			left: 50%;
+			transform: translateX(-50%);
+			right: auto;
+		}
+	}
+	&__wp{
+		max-width: 580px;
+		width: 100%;		
+		padding: 43px 30px;
+		border-radius: 24px;
+		background: #fff;
+		@include mq{
+			width: 91.46%;
+			padding: 24px 20px;
+		}
+	}
+	&__ttl{
+		@include font-size(24);
+		font-weight: 600;
+		text-align: center;
+		letter-spacing: 1px;
+		margin-bottom: 30px;
+		@include mq(tb){
+			@include font-size(20);
+		}
+		@include mq{
+			@include font-size(16);
+			margin-bottom: 18px;
+		}
+	}
+	&__dl{
+		padding-top: 20px;
+		position: relative;
+		margin-bottom: 23px;
+		@include mq{
+			margin-bottom: 14px;
+		}
+		&:last-of-type{
+			margin-bottom: 0;
+		}
+	}
+	&__dt{
+		@include font-size(16);
+		font-weight: 600;
+		position: absolute;
+		top: 5px;
+		left: 15px;
+		display: inline-block;
+		background: #fff;
+		z-index: 2;
+		padding: 0 10px;
+		span{
+			color: #ED2649;
+			margin-left: 7px;
+		}
+	}
+	&__dd{
+		position: relative;
+		input{
+			width: 100%;
+			height: 50px;
+			border-radius: 8px;
+			border: 1px solid #CBD4E1;
+			padding: 10px 16px;
+			@include font-size(16);
+			font-family: $font-base;
+			@include mq{
+				padding: 10px 22px;
+			}
+			&::-ms-input-placeholder { /* Edge 12-18 */
+				color: #94A3B8;
+			}
+			&::placeholder {
+				color: #94A3B8;
+			}
+		}
+		.toggle-pass{
+			width: 20px;
+			height: 20px;
+			display: block;
+			background: url(../img/common/ico-eye.png) no-repeat center/100%;
+			top: 17px;
+			right: 17px;
+			position: absolute;
+			z-index: 2;
+			cursor: pointer;
+		}
+	}
+
+	&__note{
+		font-family: $font-Monterrat;
+		@include fts(16, 25.6);
+		font-weight: 500;
+		color: #94A3B8;
+		margin-bottom: 30px;
+	}
+
+	&__forget-pass{
+		text-align: right;
+		padding-top: 15px;
+		@include mq{
+			padding-top: 12px;
+		}
+	}
+	&__desc{
+		text-align: center;
+		@include fts(16, 22.4);
+		padding: 7px 0;
+		&--lg{
+			@include fts(24, 33.6);
+			@include mq{
+				@include fts(16, 22.4);
+			}
+		}
+	}
+	&__submit{
+		
+	}
+	&__ico{
+		width: 55px;
+		margin: 0 auto;
+	}
+	&__register{
+		text-align: center;
+		margin-top: 24px;
+		@include mq{
+			margin-top: 17px;
+		}
+	}
+	.txt-link{
+		@include font-size(14);
+		font-weight: 600;
+		color: #44A9F0;
+		@include fn-hover;
+	}
+
+	&--engineer{
+		.c-modal{
+			&__wp{
+				max-width: 470px;
+			}
+			&__desc{
+				margin-top: 35px;
+			}
+			&__control{
+				max-width: 360px;
+				margin: 0 auto;
+				@include flex(between, center);
+				.c-modal__submit{
+					width: 160px;
+					margin: 35px auto 0;
+				}
+			}
+		}
+	}
+
+	&.is-show{
+		opacity: 1;
+		visibility: visible;
+	}
+
+	&__fillter{
+		padding-bottom: 16px;
+		position: relative;
+		@include mq{
+			display: none;
+		}
+		&-ttl{
+			padding: 17px 20px;
+			@include fts(16, 22.4);
+			font-weight: 600;
+			border-bottom: 1px solid #E2E8F0;
+		}
+		&-close{
+			position: absolute;
+			top: 16px;
+			right: 20px;
+			z-index: 2;
+			border: none;
+			outline: 0;
+			background: none;
+			cursor: pointer;
+		}
+		&-flex{
+			padding: 12px 21px;
+			@include flex(0, 0, wrap);
+			.col-type{
+				width: 280px;
+				border-radius: 12px 0 0 12px;
+				border: 1px solid #E2E8F0;
+				border-right: none;
+				overflow: hidden;
+				&__wp{
+					padding: 8px;
+				}
+			}
+			.col-hint{
+				width: calc(100% - 280px);
+				border-radius: 0 12px 12px 0;
+				border: 1px solid #E2E8F0;
+				overflow: hidden;
+				&__wp{
+					max-width: 435px;
+					overflow-y: auto;
+				}
+			}
+			.c-ttl__04{
+				padding: 10px 14px;
+				background: #F1F4F9;
+			}
+		}
+		.c-modal{
+			&__control{
+				.c-modal__submit{
+					margin-top: 28px;
+				}
+			}
+		}
+	}
+	&__filltersp{
+		padding: 34px 16px;
+		border-radius: 12px;
+		position: relative;
+		@include p-before(48px, 4px){
+			background: #000;
+			border-radius: 50px;
+			top: 8px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@include p-after(134px, 5px){
+			background: #000;
+			border-radius: 50px;
+			bottom: 8px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+		@include mq(md-min){
+			display: none;
+		}
+		&-heading{
+			@include flex(between, center);
+			@include font-size(16);
+			margin-bottom: 16px;
+			.txt-search{
+				@include font-size(14);
+				color: #0072F8;
+				border: none;
+				outline: 0;
+				font-weight: 800;
+				background: transparent;
+			}
+		}
+		&-ttl{
+			font-weight: 800;
+		}
+		&-cancel{
+			width: 24px;
+			height: 24px;
+			border: none;
+			outline: 0;
+			padding: 0;
+			background: none;
+		}
+		&-dl{
+			margin-bottom: 16px;
+			padding-bottom: 16px;
+			border-bottom: 1px solid #E2E8F0;
+			&:last-child{
+				margin-bottom: 0;
+				padding-bottom: 0;
+			}
+		}
+		&-dt{
+			@include font-size(14);
+			font-weight: 800;
+			margin-bottom: 10px;
+		}
+		&-dd{
+			.box-selected{
+				padding: 0;
+				&__heading{
+					padding: 0;
+					margin-bottom: 16px;
+					.c-ttl__04{
+						color: #F5601B;
+					}
+				}
+			}
+		}
+
+		.scroll{
+			max-height: 85vh;
+			overflow-y: auto;
+		}
+	}
+	&__control{
+		max-width: 230px;
+		margin-left: auto;
+		margin-right: 0;
+		@include flex(end, center);
+		gap: 0 10px;
+		margin-top: 35px;
+		.c-btn__01{
+			width: 110px;
+			height: 40px;
+			margin-top: 0;
+		}
+	}
+}
+
+
+#form-changepass{
+	.c-modal{
+		&__wp{
+			max-width: 447px;
+		}
+		&__dl{
+			padding-top: 0;
+		}
+		&__dt{
+			position: relative;
+			top: 0;
+			left: 0;
+			margin-bottom: 8px;
+		}
+	}
+}
+
+
+#form-logout{
+	.c-modal{
+		&__ttl{
+			text-align: left;
+			@include font-size(16);
+		}
+		&__wp{
+			max-width: 447px;
+			padding: 12px 24px;
+			border-radius: 16px;	
+		}
+		&__form{
+			position: relative;
+		}
+		&__close{
+			position: absolute;
+			top: 0;
+			right: -10px;
+			cursor: pointer;
+			@include fn-hover;
+		}
+	}
+}
