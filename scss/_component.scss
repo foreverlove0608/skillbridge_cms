@@ -173,7 +173,14 @@ Component
 		color: #0F1A2A;
 	}
 	&--add{
-		
+		max-width: 140px;
+		position: relative;
+		margin-top: 0;
+		@include p-after(24px, 24px){
+			background: url(../img/common/plus.png) no-repeat center/100%;
+			position: relative;
+			margin-left: 10px;
+		}
 	}
 }
 

@@ -52,74 +52,137 @@
 					</div>
 					<div class="manpower-page">
 						<div class="manpower-page__control">
-							<ul class="mainpower-page__search">
-								<li class="mainpower-page__search-field">
+							<ul class="manpower-page__search">
+								<li class="manpower-page__search-field manpower-page__search-field--company-name">
 									<input type="text" class="form-control" placeholder="Tên công ty">
 								</li>
-								<li class="mainpower-page__search-field">
-									<select name="" id="">
+								<li class="manpower-page__search-field manpower-page__search-field--status">
+									<select name="" id="" class="form-control form-control--select">
 										<option value="">Trạng thái</option>
 										<option value="">--</option>
 										<option value="">--</option>
 									</select>
 								</li>
 							</ul>
-							<button class="c-btn__01 c-btn__01---add">Tạo mới</button>
+							<a href="#" class="c-btn__01 c-btn__01--add">Tạo mới</a>
 						</div>
-						<div class="manpower-page__table">
-							<tr>
-								<th>STT</th>
-								<th>Mã công ty</th>
-								<th>Tên</th>
-								<th>Người đại diện</th>
-								<th>Email</th>
-								<th>Ứng viên quan tâm</th>
-								<th>Thời gian tạo<button class="btn-sort"></button></th>
-								<th>Trạng thái</th>
-								<th>Hành động</th>
-							</tr>
-							<tr>
-								<td>1</td>
-								<td>CT000223</td>
-								<td>The Walt Disney Company</td>
-								<td>Yuuto Nakamura</td>
-								<td>companyname@gmail.com</td>
-								<td>16</td>
-								<td>01/01/2022 12:21</td>
-								<td>
-									<span class="status">Đang hoạt động</span>
-								</td>
-								<td>
-									<button class="btn-action"></button>
-									<ul class="action-content">
-										<li><a href="#">Chỉnh sửa</a></li>
-										<li><a href="#">Xoá</a></li>
+						<div class="manpower-page__wp">
+							<div class="manpower-page__table">
+								<table>
+									<tr>
+										<th>STT</th>
+										<th>Mã công ty</th>
+										<th>Tên</th>
+										<th>Người đại diện</th>
+										<th>Email</th>
+										<th>Ứng viên quan tâm</th>
+										<th>Thời gian tạo<button class="btn-sort"><img src="../img/common/ico-sort.png" width="16" alt=""></button></th>
+										<th>Trạng thái</th>
+										<th>Hành động</th>
+									</tr>
+									<tr>
+										<td>1</td>
+										<td><a href="#" class="txt-link">CT000223</a></td>
+										<td>The Walt Disney Company</td>
+										<td>Yuuto Nakamura</td>
+										<td>companyname@gmail.com</td>
+										<td>16</td>
+										<td>01/01/2022 12:21</td>
+										<td>
+											<span class="label-status">Đang hoạt động</span>
+										</td>
+										<td>
+											<button class="btn-action"></button>
+											<ul class="action-content">
+												<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+												<li class="action-content__delete"><a href="#">Xoá</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="#" class="txt-link">CT000223</a></td>
+										<td>The Walt Disney Company</td>
+										<td>Yuuto Nakamura</td>
+										<td>companyname@gmail.com</td>
+										<td>16</td>
+										<td>01/01/2022 12:21</td>
+										<td>
+											<span class="label-status label-status--warning">Đăng ký bước 1</span>
+										</td>
+										<td>
+											<button class="btn-action"></button>
+											<ul class="action-content">
+												<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+												<li class="action-content__delete"><a href="#">Xoá</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>2</td>
+										<td><a href="#" class="txt-link">CT000223</a></td>
+										<td>The Walt Disney Company</td>
+										<td>Yuuto Nakamura</td>
+										<td>companyname@gmail.com</td>
+										<td>16</td>
+										<td>01/01/2022 12:21</td>
+										<td>
+											<span class="label-status label-status--danger">Đăng ký bước 1</span>
+										</td>
+										<td>
+											<button class="btn-action"></button>
+											<ul class="action-content">
+												<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+												<li class="action-content__delete"><a href="#">Xoá</a></li>
+											</ul>
+										</td>
+									</tr>
+									<tr>
+										<td>3</td>
+										<td><a href="#" class="txt-link">CT000223</a></td>
+										<td>The Walt Disney Company</td>
+										<td>Yuuto Nakamura</td>
+										<td>companyname@gmail.com</td>
+										<td>16</td>
+										<td>01/01/2022 12:21</td>
+										<td>
+											<span class="label-status label-status--danger">Ngừng hoạt động</span>
+										</td>
+										<td>
+											<button class="btn-action"></button>
+											<ul class="action-content">
+												<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+												<li class="action-content__delete"><a href="#">Xoá</a></li>
+											</ul>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div class="manpower-page__footer">
+								<div class="manpower-page__left">Có<strong>150</strong>kết quả</div>
+								<div class="manpower-page__right">
+									<ul class="manpower-page__pagination">
+										<li class="page-prev"><a href="#"></a></li>
+										<li class="page current"><a href="#">1</a></li>
+										<li class="page"><a href="#">2</a></li>
+										<li class="page"><a href="#">3</a></li>
+										<li class="extend"><span></span></li>
+										<li class="page"><a href="#">10</a></li>
+										<li class="page-next"><a href="#"></a></li>
 									</ul>
-								</td>
-							</tr>
+									<div class="manpower-page__postperpage">
+										<select name="" id="" class="form-control form-control--select">
+											<option value="5">5 / trang</option>
+											<option value="10">10 / trang</option>
+											<option value="15">15 / trang</option>
+											<option value="20">20 / trang</option>
+											<option value="25">25 / trang</option>
+										</select>
+									</div>
+									<div class="manpower-page__goto">Đi đến trang <input type="text" class="form-control form-control--sm"></div>
+								</div>
+							</div>
 						</div>
-						<div class="manpower-page__footer">
-							<div class="manpower-page__result">Có<strong>150</strong>kết quả</div>
-							<ul class="manpower-page__pagination">
-								<li class="page-prev"><a href="#"></a></li>
-								<li class="page"><a href="#">1</a></li>
-								<li class="page"><a href="#">2</a></li>
-								<li class="page"><a href="#">3</a></li>
-								<li class="extents"><span></span></li>
-								<li class="page"><a href="#">10</a></li>
-								<li class="page-next"><a href="#"></a></li>
-							</ul>
-						</div>
-						<div class="mainpower-page__postperpage">
-							<select name="" id="">
-								<option value="5">5 / trang</option>
-								<option value="10">10 / trang</option>
-								<option value="15">15 / trang</option>
-								<option value="20">20 / trang</option>
-								<option value="25">25 / trang</option>
-							</select>
-						</div>
-						<div class="manpower-page__goto">Đi đến trang <input type="text" class="form-control"></div>
 					</div>
 				</div>
 			</div>

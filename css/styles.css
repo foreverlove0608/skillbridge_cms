@@ -1208,7 +1208,8 @@ Layout
   color: #CBD4E1;
 }
 .form-control--select {
-  background: #fff url(../img/common/arrow-down.png) no-repeat right 15px center/24px 24px;
+  background: #fff url(../img/common/chevron-down-02.png) no-repeat right 15px center/24px 24px;
+  color: #CBD4E1;
 }
 .form-control--textarea {
   height: 114px;
@@ -1853,6 +1854,22 @@ Component
   background: #E2E8F0 !important;
   color: #0F1A2A;
 }
+.c-btn__01--add {
+  max-width: 140px;
+  position: relative;
+  margin-top: 0;
+}
+.c-btn__01--add:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background: url(../img/common/plus.png) no-repeat center/100%;
+  position: relative;
+  margin-left: 10px;
+}
+
 /* ====================================================
 Utility
 ==================================================== */
@@ -2445,6 +2462,344 @@ Utility
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
+  padding: 16px 30px;
+}
+.manpower-page__search {
+  width: calc(100% - 140px);
+  padding-right: 10px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.manpower-page__search-field {
+  max-width: 324px;
+  width: 100%;
+  margin-right: 30px;
+}
+.manpower-page__search-field:last-of-type {
+  margin-right: 0;
+}
+.manpower-page__search-field--company-name {
+  position: relative;
+}
+.manpower-page__search-field--company-name:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/search-normal.png) no-repeat center/100%;
+  top: calc(50% - 10px);
+  left: 10px;
+}
+.manpower-page__search-field--company-name .form-control {
+  padding-left: 44px;
+}
+.manpower-page__search-field--status {
+  max-width: 230px;
+}
+.manpower-page__wp {
+  padding: 0 30px;
+}
+.manpower-page__table {
+  border-radius: 15px;
+  overflow-x: scroll;
+  margin-bottom: 22px;
+}
+.manpower-page__table table {
+  min-width: 1530px;
+  width: 100%;
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.manpower-page__table table tr th {
+  color: #777E90;
+  background: #E2E8F0;
+  position: relative;
+}
+.manpower-page__table table tr th:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 1px;
+  height: 24px;
+  background: #64748B;
+  top: calc(50% - 12px);
+  right: 0;
+}
+.manpower-page__table table tr th:last-of-type:after {
+  display: none;
+}
+.manpower-page__table table tr th, .manpower-page__table table tr td {
+  padding: 19px 0 19px 12px;
+}
+.manpower-page__table table tr th:nth-child(1), .manpower-page__table table tr td:nth-child(1) {
+  width: 3.9215686275%;
+}
+.manpower-page__table table tr th:nth-child(2), .manpower-page__table table tr td:nth-child(2) {
+  width: 7.8431372549%;
+}
+.manpower-page__table table tr th:nth-child(3), .manpower-page__table table tr td:nth-child(3) {
+  width: 16.339869281%;
+}
+.manpower-page__table table tr th:nth-child(4), .manpower-page__table table tr td:nth-child(4) {
+  width: 16.339869281%;
+}
+.manpower-page__table table tr th:nth-child(5), .manpower-page__table table tr td:nth-child(5) {
+  width: 15.6862745098%;
+}
+.manpower-page__table table tr th:nth-child(6), .manpower-page__table table tr td:nth-child(6) {
+  width: 11.1111111111%;
+}
+.manpower-page__table table tr th:nth-child(7), .manpower-page__table table tr td:nth-child(7) {
+  width: 10.4575163399%;
+}
+.manpower-page__table table tr th:nth-child(8), .manpower-page__table table tr td:nth-child(8) {
+  width: 10.4575163399%;
+}
+.manpower-page__table table tr th:nth-child(9), .manpower-page__table table tr td:nth-child(9) {
+  width: 7.8431372549%;
+  position: relative;
+}
+.manpower-page__table table tr th .btn-sort, .manpower-page__table table tr td .btn-sort {
+  border: none;
+  outline: 0;
+  background: none;
+}
+.manpower-page__table table tr th .txt-link, .manpower-page__table table tr td .txt-link {
+  color: #0072F8;
+}
+.manpower-page__table table tr th .label-status, .manpower-page__table table tr td .label-status {
+  padding: 1px 5px 5px;
+  border-radius: 8px;
+  background: #D9F6E8;
+  color: #009F50;
+  max-width: 140px;
+  width: 100%;
+  height: 28px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.manpower-page__table table tr th .label-status--warning, .manpower-page__table table tr td .label-status--warning {
+  background: #FFF2D4;
+  color: #FAB200;
+}
+.manpower-page__table table tr th .label-status--danger, .manpower-page__table table tr td .label-status--danger {
+  background: #FFE8E8;
+  color: #ED2649;
+}
+.manpower-page__table table tr td {
+  padding: 16px 0 16px 12px;
+  border-bottom: 1px solid #E2E8F0;
+}
+.manpower-page__table table tr td:nth-child(1), .manpower-page__table table tr td:last-of-type {
+  text-align: center;
+  padding-left: 0;
+}
+.manpower-page__footer {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.manpower-page__left {
+  font-size: 1.4rem;
+}
+.manpower-page__left strong {
+  font-weight: 700;
+  padding: 0 5px;
+}
+.manpower-page__right {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  gap: 0 60px;
+  width: 80%;
+}
+.manpower-page__pagination {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0 10px;
+}
+.manpower-page__pagination .page a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #B1B5C3;
+  border-radius: 8px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+}
+.manpower-page__pagination .page.current a {
+  background: -webkit-gradient(linear, left top, right top, from(#F5601B), to(#FF862A));
+  background: -o-linear-gradient(left, #F5601B 0%, #FF862A 100%);
+  background: linear-gradient(90deg, #F5601B 0%, #FF862A 100%);
+  border-color: transparent;
+  color: #fff;
+}
+.manpower-page__pagination .extend {
+  width: 36px;
+  height: 36px;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.manpower-page__pagination .extend:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: url(../img/common/extend-pagination.png) no-repeat center/100%;
+  position: relative;
+}
+.manpower-page__postperpage {
+  max-width: 104px;
+  width: 100%;
+}
+.manpower-page__postperpage .form-control {
+  height: 32px;
+  padding: 0 16px;
+  font-size: 1.2rem;
+  color: #000;
+  background: url(../img/common/chevron-down.png) no-repeat center right 8px/16px 16px;
+}
+.manpower-page__goto {
+  max-width: 140px;
+  width: 100%;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  font-size: 1.4rem;
+  white-space: nowrap;
+}
+.manpower-page__goto .form-control--sm {
+  width: 50px;
+  height: 32px;
+  text-align: center;
+  margin-left: 8px;
+  padding: 0 10px;
+}
+
+.action-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  width: 155px;
+  padding: 4px 8px;
+  background: #fff;
+  z-index: 10;
+}
+.action-content li a {
+  height: 54px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  position: relative;
+}
+@media (any-hover: hover) {
+  .action-content li a {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .action-content li a:hover {
+    opacity: 0.7;
+  }
+}
+.action-content li a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  margin-right: 10px;
+}
+.action-content__edit a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/edit-2.png) no-repeat center/100%;
+}
+.action-content__delete a:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/trash.png) no-repeat center/100%;
+}
+
+.btn-action {
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/more-horizontal.png) no-repeat center/100%;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+}
+@media (any-hover: hover) {
+  .btn-action {
+    -webkit-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+  }
+  .btn-action:hover {
+    opacity: 0.7;
+  }
+}
+.btn-action.is-active {
+  background: url(../img/common/more-horizontal-active.png) no-repeat center/100%;
 }
 
 /* ====================================================
