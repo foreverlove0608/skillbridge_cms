@@ -107,18 +107,3 @@
 }
 
 
-.error{
-    @include font-size(16);
-    font-weight: 600;
-    color: #F31542;
-    background: rgba(#F31542, .1);
-    padding: 18px 14px;
-    border-radius: 11px;
-    margin-bottom: 12px;
-    @include flex(0, center);
-    @include p-before(24px, 24px){
-        background: url(../img/common/warning-2.png) no-repeat center/100%;
-        position: relative;
-        margin-right: 8px;
-    }
-}
