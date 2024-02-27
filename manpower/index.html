@@ -10,14 +10,13 @@
 		<link rel="shortcut icon" href="../favicon.ico">
 		<link type="text/css" rel="stylesheet" href="../css/styles.css">
 	</head>
-	<body>
-		<main id="page-manpower" class="wrapper">
+	<body> --> <main id="page-manpower" class="wrapper">
 			<div class="cms-main">
 				<div class="cms-sidebar">
 					<h1 class="cms-sidebar__logo"><a href="#"><img src="../img/common/logo.png" alt=""></a></h1>
 					<ul class="cms-sidebar__nav">
-						<li class="cms-sidebar__nav-item is-active"><a href="#">Dashboard</a></li>
-						<li class="cms-sidebar__nav-item"><a href="#">Công ty Nhật cần người</a></li>
+						<li class="cms-sidebar__nav-item"><a href="#">Dashboard</a></li>
+						<li class="cms-sidebar__nav-item is-active"><a href="#">Công ty Nhật cần người</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Công ty cung ứng nhân lực</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Danh sách ứng viên</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Câu hỏi thường gặp</a></li>
@@ -317,6 +316,74 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="c-modal create-company" id="add-company">
+				<div class="c-modal__wp">
+					<form action="" method="post" class="c-modal__form">
+						<h3 class="c-modal__ttl">Thêm mới công ty Nhật</h3>
+						<div class="create-company__wp">
+							<dl class="create-company__field create-company__field--full">
+								<dt class="create-company__field-label"><span>*</span>Tên công ty</dt>
+								<dd class="create-company__field-input">
+									<input type="text" class="form-control error02" placeholder="Nhập tên công ty">
+									<span class="error _types02">Tên công ty không được để trống</span>
+								</dd>
+							</dl>
+							<dl class="create-company__field">
+								<dt class="create-company__field-label"><span>*</span>Email</dt>
+								<dd class="create-company__field-input">
+									<input type="text" class="form-control" placeholder="Nhập email">
+								</dd>
+							</dl>
+							<dl class="create-company__field">
+								<dt class="create-company__field-label">Số điện thoại</dt>
+								<dd class="create-company__field-input">
+									<input type="text" class="form-control" placeholder="Nhập số điện thoại">
+								</dd>
+							</dl>
+							<div class="representative-box">
+								<p class="representative-box__label">Người đại diện 1</p>
+								<div class="representative-box__field">
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Tên người đại diện</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="Hoàng Thị Yến" placeholder="Nhập tên người đại diện"></dd>
+									</dl>
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Phương thức liên lạc</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="0985859543" placeholder="Nhập phương thức liên lạc"></dd>
+									</dl>
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Chức danh</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="Giám đốc" placeholder="Nhập chức danh"></dd>
+									</dl>
+								</div>
+							</div>
+							<div class="representative-box">
+								<p class="representative-box__label">Người đại diện 1</p>
+								<a href="#" class="c-btn__delete representative-box__del">Xoá</a>
+								<div class="representative-box__field">
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Tên người đại diện</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="Hoàng Thị Yến" placeholder="Nhập tên người đại diện"></dd>
+									</dl>
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Phương thức liên lạc</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="0985859543" placeholder="Nhập phương thức liên lạc"></dd>
+									</dl>
+									<dl class="representative-box__dl">
+										<dt class="representative-box__dt">Chức danh</dt>
+										<dd class="representative-box__dd"><input type="text" class="form-control" value="Giám đốc" placeholder="Nhập chức danh"></dd>
+									</dl>
+								</div>
+							</div>
+							<button class="c-txt__add">Thêm người đại diện</button>
+						</div>
+						<div class="c-modal__control">
+							<button class="c-btn__01 c-btn__01--gray js-cancel">Hủy</button>
+							<a href="#" class="c-btn__01">Thêm mới</a>
+						</div>
+					</form>
 				</div>
 			</div>
 		</main>

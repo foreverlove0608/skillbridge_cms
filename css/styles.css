@@ -1040,8 +1040,7 @@ reset style
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 10px;
-  /* Base font size, change to 14px or 16px if needed */
+  font-size: 10px; /* Base font size, change to 14px or 16px if needed */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1193,8 +1192,7 @@ Layout
      -moz-appearance: none;
           appearance: none;
 }
-.form-control::-ms-input-placeholder {
-  /* Edge 12-18 */
+.form-control::-ms-input-placeholder { /* Edge 12-18 */
   color: #CBD4E1;
 }
 .form-control::-webkit-input-placeholder {
@@ -1509,8 +1507,7 @@ Layout
     padding: 10px 22px;
   }
 }
-.c-modal__dd input::-ms-input-placeholder {
-  /* Edge 12-18 */
+.c-modal__dd input::-ms-input-placeholder { /* Edge 12-18 */
   color: #94A3B8;
 }
 .c-modal__dd input::-webkit-input-placeholder {
@@ -2059,6 +2056,55 @@ Layout
 .c-table--company table tr td.txt-status {
   color: #0F993E;
 }
+.c-table--manpower02 table tr th:nth-child(1), .c-table--manpower02 table tr td:nth-child(1) {
+  width: 3.9215686275%;
+}
+.c-table--manpower02 table tr th:nth-child(2), .c-table--manpower02 table tr td:nth-child(2) {
+  width: 7.8431372549%;
+}
+.c-table--manpower02 table tr th:nth-child(3), .c-table--manpower02 table tr td:nth-child(3) {
+  width: 16.9934640523%;
+}
+.c-table--manpower02 table tr th:nth-child(4), .c-table--manpower02 table tr td:nth-child(4) {
+  width: 8.4967320261%;
+}
+.c-table--manpower02 table tr th:nth-child(5), .c-table--manpower02 table tr td:nth-child(5) {
+  width: 10.4575163399%;
+}
+.c-table--manpower02 table tr th:nth-child(6), .c-table--manpower02 table tr td:nth-child(6) {
+  width: 7.8431372549%;
+}
+.c-table--manpower02 table tr th:nth-child(7), .c-table--manpower02 table tr td:nth-child(7) {
+  width: 10.4575163399%;
+}
+.c-table--manpower02 table tr th:nth-child(8), .c-table--manpower02 table tr td:nth-child(8) {
+  width: 15.6862745098%;
+}
+.c-table--manpower02 table tr th:nth-child(9), .c-table--manpower02 table tr td:nth-child(9) {
+  width: 10.4575163399%;
+}
+.c-table--manpower02 table tr th:nth-child(10), .c-table--manpower02 table tr td:nth-child(10) {
+  width: 7.8431372549%;
+  position: relative;
+}
+.c-table--manpower02 table tr td.shortUrl {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.c-table--manpower02 table tr td .shortUrl-txt {
+  color: #64748B;
+}
+.c-table--manpower02 table tr td .shortUrl-wp {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
 
 .c-switch {
   display: inline-block;
@@ -2606,15 +2652,15 @@ Utility
 }
 .cms-sidebar__nav li.is-active a {
   color: #fff;
-  background: #00000080;
-  -webkit-box-shadow: 0px 4px 24px 0px #2000000A;
-          box-shadow: 0px 4px 24px 0px #2000000A;
+  background: rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
+          box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
 }
 .cms-sidebar__nav li:hover a {
   color: #fff;
-  background: #00000080;
-  -webkit-box-shadow: 0px 4px 24px 0px #2000000A;
-          box-shadow: 0px 4px 24px 0px #2000000A;
+  background: rgba(0, 0, 0, 0.5019607843);
+  -webkit-box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
+          box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
 }
 .cms-content {
   width: calc(100% - 330px);
@@ -3266,6 +3312,54 @@ Utility
   font-size: 1.4rem;
   padding: 5px;
   max-width: 135px;
+}
+.company-detail__field-shortUrl {
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.company-detail__field-shortUrl a {
+  color: #3491FF;
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+.shorturl-input {
+  margin-top: 17px;
+  position: relative;
+}
+.shorturl-input .form-control {
+  background: #F6F8FC;
+}
+.shorturl-input__copy {
+  color: #F5601B;
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+.shorturl-input__copy:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: url(../img/common/copy.png) no-repeat center/100%;
+  position: relative;
+  margin-right: 10px;
 }
 
 /* ====================================================
