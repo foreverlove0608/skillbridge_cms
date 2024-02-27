@@ -43,6 +43,7 @@
 			min-width: 1530px;
 			width: 100%;
 			@include fts(16, 22.4);
+			background: #fff;
 			tr{
 				th{
 					color: #777E90;
@@ -94,30 +95,12 @@
 						border: none;
 						outline: 0;
 						background: none;
+						cursor: pointer;
+						@include fn-hover;
 					}
 					.txt-link{
 						color: #0072F8;
-					}
-					.label-status{
-						// display: inline-block;
-						padding: 1px 5px 5px;
-						border-radius: 8px;
-						background: #D9F6E8;
-						color: #009F50;
-						max-width: 140px;
-						width: 100%;
-						height: 28px;
-						display: inline-flex;
-						align-items: center;
-						justify-content: center;
-						&--warning{
-							background: #FFF2D4;
-							color: #FAB200;
-						}
-						&--danger{
-							background: #FFE8E8;
-							color: #ED2649;
-						}
+						@include fn-hover;
 					}
 				}
 				td{
@@ -181,11 +164,13 @@
 		max-width: 104px;
 		width: 100%;
 		.form-control{
+			cursor: pointer;
 			height: 32px;
 			padding: 0 16px;
 			@include font-size(12);
 			color: #000;
 			background: url(../img/common/chevron-down.png) no-repeat center right 8px/16px 16px;
+			@include fn-hover;
 		}
 	}
 	&__goto{

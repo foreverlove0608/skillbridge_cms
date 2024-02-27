@@ -88,6 +88,25 @@ Component
 			line-height: 1.8;
 		}
 	}
+	&__add{
+		@include font-size(16);
+		font-weight: 600;
+		color: $color-main;
+		display: inline-flex;
+		align-items: center;
+		width: 230px;
+		height: 48px;
+		outline: 0;
+		border: none;
+		background: none;
+		cursor: pointer;
+		@include fn-hover;
+		@include p-before(24px, 24px){
+			background: url(../img/common/ico-plus-or.png) no-repeat center/100%;
+			position: relative;
+			margin-right: 8px;
+		}
+	}
 }
 
 
@@ -181,6 +200,21 @@ Component
 			position: relative;
 			margin-left: 10px;
 		}
+	}
+}
+
+.c-btn__delete{
+	max-width: 50px;
+	display: inline-flex;
+	align-items: center;
+	@include font-size(14);
+	font-weight: 500;
+	font-family: $font-Monterrat;
+	color: #ED2649;
+	@include p-before(20px, 20px){
+		background: url(../img/common/trash.png) no-repeat center/100%;
+		position: relative;
+		margin-right: 3px;
 	}
 }
 
