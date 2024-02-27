@@ -129,14 +129,10 @@ Component
 
 .c-ttl{
 	&__01{
-		@extend %__c-ttl__01;
-		&--ff{
-			@extend %__c-ttl__01;
-			color: #fff;
-			&:before{
-				background: #fff;
-			}
-		}
+		font-family: $font-Monterrat;
+		font-weight: 700;
+		margin-bottom: 16px;
+		@include font-size(16);
 	}
 	&__02{
 		@include font-size(50);

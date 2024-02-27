@@ -1,18 +1,28 @@
 @use 'vars' as *;
 
 .company-detail{
+	padding-bottom: 30px;
 	&__wp{
 		@include flex(between, 0, wrap);
 		@include font-size(16);
 	}
-	&__left{
-		width: 32%;
-	}
-	&__right{
-		width: 66%;
-	}
-	&__ttl{
+	&__field{
+		margin-bottom: 24px;
 		font-family: $font-Monterrat;
-		font-weight: 700;
+		&-label{
+			@include font-size(14);
+			color: #64748B;
+			margin-bottom: 6px;
+			font-weight: 600;
+		}
+		&-text{
+			font-weight: 500;
+			@include fts(16, 25.6);
+			.label-status{
+				@include font-size(14);
+				padding: 5px;
+				max-width: 135px;
+			}
+		}
 	}
 }
