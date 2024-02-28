@@ -19,6 +19,12 @@ body {
     -moz-osx-font-smoothing: grayscale;
     line-height: 1;
 	background: #fff;
+	&.has-modal{
+		overflow: hidden;
+		&::-webkit-scrollbar {
+			display: none;
+		}
+	}
 }
 
 a {

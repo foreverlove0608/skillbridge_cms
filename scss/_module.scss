@@ -315,7 +315,26 @@ Layout
 		}
 	}
 	&__submit{
-		
+		@include flex(center, center);
+		background: $color-main;
+		width: 100%;
+		height: 50px;
+		border-radius: 8px;
+		color: #fff;
+		@include font-size(16);
+		font-weight: 600;
+		outline: 0;
+		border: none;
+		cursor: pointer;
+		@include fn-hover;
+		margin-top: 24px;
+		@include mq{
+			margin-top: 22px;
+		}
+		&--gray{
+			background: #E2E8F0;
+			color: #0F1A2A;
+		}
 	}
 	&__ico{
 		width: 55px;
@@ -338,7 +357,7 @@ Layout
 	&--engineer{
 		.c-modal{
 			&__wp{
-				max-width: 470px;
+				max-width: 470px !important;
 			}
 			&__desc{
 				margin-top: 35px;
@@ -553,6 +572,14 @@ Layout
 	}
 }
 
+#changepass{
+	.c-modal__dt{
+		position: static;
+		padding: 0;
+		margin-bottom: 10px;
+	}
+}
+
 #add-company{
 
 }
@@ -635,7 +662,7 @@ Layout
 	overflow-x: scroll;
 	margin-bottom: 22px;
 	table{
-		min-width: 1530px;
+		min-width: 1510px;
 		width: 100%;
 		@include fts(16, 22.4);
 		background: #fff;
@@ -803,6 +830,41 @@ Layout
 					}
 					.shortUrl-wp{
 						@include flex(between, center);
+					}
+				}
+			}
+		}
+	}
+	&--candidate{
+		table{
+			tr{
+				th, td{
+					&:nth-child(1){
+						width: calc((60 / 1530) * 100%);
+					}
+					&:nth-child(2){
+						width: calc((120 / 1530) * 100%);
+					}
+					&:nth-child(3){
+						width: calc((348 / 1530) * 100%);
+					}
+					&:nth-child(4){
+						width: calc((222 / 1530) * 100%);
+					}
+					&:nth-child(5){
+						width: calc((200 / 1530) * 100%);
+					}
+					&:nth-child(6){
+						width: calc((160 / 1530) * 100%);
+					}
+					&:nth-child(7){
+						width: calc((140 / 1530) * 100%);
+					}
+					&:nth-child(8){
+						width: calc((160 / 1530) * 100%);
+					}
+					&:nth-child(9){
+						width: calc((120 / 1530) * 100%);
 					}
 				}
 			}

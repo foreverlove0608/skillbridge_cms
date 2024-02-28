@@ -197,6 +197,17 @@ Component
 			margin-left: 10px;
 		}
 	}
+	&--dropdown{
+		max-width: 140px;
+		position: relative;
+		margin-top: 0;
+		@include p-after(24px, 24px){
+			background: url(../img/common/chevron-down-white.png) no-repeat center/100%;
+			position: relative;
+			margin-left: 10px;
+			@include smooth-transition;
+		}
+	}
 }
 
 .c-btn__delete{
