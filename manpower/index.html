@@ -16,9 +16,9 @@
 				<div class="cms-sidebar">
 					<h1 class="cms-sidebar__logo"><a href="#"><img src="../img/common/logo.png" alt=""></a></h1>
 					<ul class="cms-sidebar__nav">
-						<li class="cms-sidebar__nav-item"><a href="#">Dashboard</a></li>
-						<li class="cms-sidebar__nav-item is-active"><a href="#">Công ty Nhật cần người</a></li>
-						<li class="cms-sidebar__nav-item"><a href="#">Công ty cung ứng nhân lực</a></li>
+						<li class="cms-sidebar__nav-item"><a href="/dashboard/">Dashboard</a></li>
+						<li class="cms-sidebar__nav-item is-active"><a href="/manpower/">Công ty Nhật cần người</a></li>
+						<li class="cms-sidebar__nav-item"><a href="/manpower_02/">Công ty cung ứng nhân lực</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Danh sách ứng viên</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Câu hỏi thường gặp</a></li>
 						<li class="cms-sidebar__nav-item"><a href="#">Quản lý template</a></li>
@@ -43,9 +43,9 @@
 									</div>
 								</a>
 								<ul class="cms-heading__control-option">
-									<li><a href="#"><img src="../img/common/ico-changepass.png" width="20" alt="">Đổi mật khẩu</a></li>
+									<li><a href="#" class="js-show-modal" data-modal="changepass"><img src="../img/common/ico-changepass.png" width="20" alt="">Đổi mật khẩu</a></li>
 									<li><a href="#"><img src="../img/common/password-check.png" width="20" alt="">Cấp lại mật khẩu</a></li>
-									<li><a href="#"><img src="../img/common/logout.png" width="20" alt="">Đăng xuất</a></li>
+									<li><a href="#" class="js-show-modal" data-modal="form-logout"><img src="../img/common/logout.png" width="20" alt="">Đăng xuất</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -64,7 +64,7 @@
 									</select>
 								</li>
 							</ul>
-							<a href="#" class="c-btn__01 c-btn__01--add">Tạo mới</a>
+							<a href="#" class="c-btn__01 c-btn__01--add js-show-modal" data-modal="add-company">Tạo mới</a>
 						</div>
 						<div class="manpower-page__wp">
 							<div class="c-table">

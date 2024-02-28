@@ -27,3 +27,18 @@ $('.btn-action').click(function () {
 	$(this).next().slideToggle();
 	$(this).toggleClass('is-active');
 })
+
+
+$('.js-cancel').click(function (e) {
+	e.preventDefault();
+	$(this).closest('.c-modal').removeClass('is-show');
+})
+
+
+$('.js-show-modal').click(function (e) {
+	e.preventDefault();
+	$('.cms-heading__control-option').slideUp();
+	var modal_id = $(this).attr('data-modal');
+	$('.c-modal').removeClass('is-show');
+	$('#' + modal_id).addClass('is-show');
+});

@@ -1,41 +1,7 @@
 <div class="cms-main">
-	<div class="cms-sidebar">
-		<h1 class="cms-sidebar__logo"><a href="#"><img src="../img/common/logo.png" alt=""></a></h1>
-		<ul class="cms-sidebar__nav">
-			<li class="cms-sidebar__nav-item is-active"><a href="#">Dashboard</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Công ty Nhật cần người</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Công ty cung ứng nhân lực</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Danh sách ứng viên</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Câu hỏi thường gặp</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Quản lý template</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Master data</a></li>
-			<li class="cms-sidebar__nav-item"><a href="#">Cài đặt hệ thống</a></li>
-		</ul>
-	</div>
+	<%- include('common/_sidebar'); %>
 	<div class="cms-content">
-		<div class="cms-heading">
-			<h2 class="cms-heading__ttl">Dashboard</h2>
-			<ul class="cms-heading__control">
-				<li class="cms-heading__control-notification"><a href="#"><img src="../img/common/icon-notification.png" alt="" width="40"></a></li>
-				<li class="cms-heading__control-notification"><a href="#"><img src="../img/common/vn.png" alt="" width="24"></a></li>
-				<li class="cms-heading__control-user">
-					<a href="#" class="wp js-user">
-						<div class="cms-heading__control-avatar">
-							<img src="../img/common/avatar.png" alt="">
-						</div>
-						<div class="cms-heading__control-info">
-							<span class="namme">Quản Trị Viên</span>
-							<span class="position">Super Admintrator</span>
-						</div>
-					</a>
-					<ul class="cms-heading__control-option">
-						<li><a href="#"><img src="../img/common/ico-changepass.png" width="20" alt="">Đổi mật khẩu</a></li>
-						<li><a href="#"><img src="../img/common/password-check.png" width="20" alt="">Cấp lại mật khẩu</a></li>
-						<li><a href="#"><img src="../img/common/logout.png" width="20" alt="">Đăng xuất </a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
+		<%- include('common/_header'); %>
 		<div class="dashboard-content">
 			<ul class="dashboard-content__top">
 				<li class="dashboard-content__top-item">
@@ -73,7 +39,7 @@
 		</div>
 	</div>
 </div>
-<div class="c-modal" id="register" style="display: none;">
+<div class="c-modal" id="register">
 	<span class="c-modal__btn-close js-cancel"></span>
 	<div class="c-modal__wp">
 		<form action="" method="post" class="c-modal__form">
@@ -83,6 +49,32 @@
 				<dt class="c-modal__dt">メールアドレス<span>*</span></dt>
 				<dd class="c-modal__dd">
 					<input type="text" placeholder="example@gmail.com">
+				</dd>
+			</dl>
+			<button class="c-btn__01">送信</button>
+			<div class="c-modal__register"><a href="#" class="txt-link js-cancel" data-modal="login">キャンセル</a></div>
+		</form>
+	</div>
+</div>
+
+<div class="c-modal" id="changepass">
+	<span class="c-modal__btn-close js-cancel"></span>
+	<div class="c-modal__wp">
+		<form action="" method="post" class="c-modal__form">
+			<h3 class="c-modal__ttl">パスワードリセット</h3>
+			<div class="c-modal__desc">
+				パスワードは、8文字以上、大文字と小文字の両方を含め、数字を1文字以上含む必要があります。
+			</div>
+			<dl class="c-modal__dl">
+				<dt class="c-modal__dt">新しいパスワード</dt>
+				<dd class="c-modal__dd">
+					<input type="password" placeholder="入力してください">
+				</dd>
+			</dl>
+			<dl class="c-modal__dl">
+				<dt class="c-modal__dt">新しいパスワード</dt>
+				<dd class="c-modal__dd">
+					<input type="password" placeholder="入力してください">
 				</dd>
 			</dl>
 			<button class="c-btn__01">送信</button>
@@ -107,5 +99,6 @@
 		</form>
 	</div>
 </div>
+
 
 
