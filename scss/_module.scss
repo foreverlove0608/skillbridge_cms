@@ -36,10 +36,10 @@ Layout
 		color: #CBD4E1;
 	}
 	&--textarea{
-		height: 114px;
+		height: 240px;
 		width: 100%;
 		resize: none;
-	}
+	} 
 	&--gray{
 		background: linear-gradient(0deg, #F1F4F9, #F1F4F9), linear-gradient(0deg, #CBD4E1, #CBD4E1);
 	}
@@ -527,6 +527,33 @@ Layout
 			margin-top: 0;
 		}
 	}
+
+	.upload-file{
+		border: 1px dashed #E2E8F0;
+		padding: 4px 16px;
+		@include font-size(16);
+		color: #0F1A2A;
+		max-width: 270px;
+		width: 100%;
+		position: relative;
+		img{
+			margin-right: 10px;
+		}
+		&__close{
+			width: 24px;
+			height: 24px;
+			outline: 0;
+			border: none;
+			background: none;
+			position: absolute;
+			top: 8px;
+			right: 16px;
+			padding: 0;
+			img{
+				margin-right: 0;
+			}
+		}
+	}
 }
 
 
@@ -865,6 +892,97 @@ Layout
 					}
 					&:nth-child(9){
 						width: calc((120 / 1530) * 100%);
+					}
+				}
+			}
+		}
+	}
+
+	&--faq{
+		table{
+			tr{
+				th, td{
+					&:nth-child(1){
+						width: calc((60 / 1530) * 100%);
+					}
+					&:nth-child(2){
+						width: calc((60 / 1530) * 100%);
+					}
+					&:nth-child(3){
+						width: calc((380 / 1530) * 100%);
+					}
+					&:nth-child(4){
+						width: calc((750 / 1530) * 100%);
+					}
+					&:nth-child(5){
+						width: calc((160 / 1530) * 100%);
+					}
+					&:nth-child(6){
+						width: calc((120 / 1530) * 100%);
+					}
+				}
+				th{
+					&:after{
+						display: none;
+					}
+				}
+				td{
+					&:first-child{
+						@include p-before(20px, 20px){
+							background: url(../img/common/menu.png) no-repeat center/100%;
+							top: 50%;
+							left: 50%;
+							transform: translate(-50%, -50%);
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&--recruitment{
+		table{
+			tr{
+				th, td{
+					&:nth-child(1){
+						width: calc((60 / 1530) * 100%);
+					}
+					&:nth-child(2){
+						width: calc((525 / 1530) * 100%);
+					}
+					&:nth-child(3){
+						width: calc((525 / 1530) * 100%);
+					}
+					&:nth-child(4){
+						width: calc((140 / 1530) * 100%);
+						text-align: center;
+						padding-left: 0;
+					}
+					&:nth-child(5){
+						width: calc((160 / 1530) * 100%);
+					}
+					&:nth-child(6){
+						width: calc((120 / 1530) * 100%);
+					}
+					label{
+						width: 20px;
+						height: 20px;
+						border: 1px solid #B1B5C3;
+						display: block;
+						border-radius: 50%;
+						margin: 0 auto;
+						position: relative;
+						@include p-before(13px, 13px){
+							background: $color-main;
+							border-radius: 50%;
+							top: 2px;
+							left: 2px;
+						}
+					}
+				}
+				td{
+					&:nth-child(4){
+						padding-left: 0;
 					}
 				}
 			}

@@ -1,5 +1,9 @@
 @use 'vars' as *;
-
+#page-recruitment{
+	.candidate-page__control{
+		@include flex(between, center);
+	}
+}
 .candidate-heading{
 	@include flex(between, center);
 	padding: 16px 30px;
@@ -179,6 +183,32 @@
 		&.is-active{
 			color: $color-main;
 			border-bottom: 1px solid $color-main;
+		}
+	}
+}
+
+
+.download-file{
+	background: #fff;
+	box-shadow: 2px 2px 10px 0px #7E91D324;
+	border-radius: 16px;
+	padding: 24px 30px;
+	@include flex(between, center);
+	max-width: 620px;
+	margin-bottom: 23px;
+	.txt-link{
+		position: static !important;
+		img{
+			margin-right: 10px;
+		}
+	}
+	.c-btn__01{
+		background: #FFF5DA;
+		color: $color-main;
+		width: 140px;
+		margin-top: 0;
+		img{
+			margin-left: 10px;
 		}
 	}
 }
