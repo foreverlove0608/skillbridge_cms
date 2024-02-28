@@ -30,6 +30,9 @@
 			&--status{
 				max-width: 230px;
 			}
+			.form-control--select{
+				background: #fff url(../img/common/chevron-down.png) no-repeat right 15px center/24px 24px;
+			}
 		}
 	}
 	&__wp{
