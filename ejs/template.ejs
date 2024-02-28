@@ -11,11 +11,9 @@
 	<link type="text/css" rel="stylesheet" href="<%= RELATIVE_PATH %>css/styles.css">
 </head>
 <body>
-	<!-- <%- include('common/_header'); %> -->
 	<main id="page-<%= pageData.template %>" class="wrapper">
-		<%- include(pageData.template, {datalabel:'data'}) %>	
+		<%- include(pageData.template, {datalabel:'data'}) %>
 	</main>
-	<!-- <%- include('common/_footer'); %> -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="<%= RELATIVE_PATH %>js/setting.js"></script>
 </body>
