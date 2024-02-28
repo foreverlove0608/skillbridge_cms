@@ -184,8 +184,8 @@ Layout
 	background: rgba(#0F1A2A, .6);
 	z-index: 11;
 	@include flex(center, center);
-	// opacity: 0;
-	// visibility: hidden;
+	opacity: 0;
+	visibility: hidden;
 	@include smooth-transition;
 	&__btn-close{
 		width: 40px;

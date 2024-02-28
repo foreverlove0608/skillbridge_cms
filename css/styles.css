@@ -1040,7 +1040,8 @@ reset style
 html {
   overflow-y: scroll;
   overflow-x: hidden;
-  font-size: 10px; /* Base font size, change to 14px or 16px if needed */
+  font-size: 10px;
+  /* Base font size, change to 14px or 16px if needed */
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
@@ -1192,7 +1193,8 @@ Layout
      -moz-appearance: none;
           appearance: none;
 }
-.form-control::-ms-input-placeholder { /* Edge 12-18 */
+.form-control::-ms-input-placeholder {
+  /* Edge 12-18 */
   color: #CBD4E1;
 }
 .form-control::-webkit-input-placeholder {
@@ -1396,6 +1398,8 @@ Layout
   -ms-flex-align: center;
   -webkit-box-align: center;
           align-items: center;
+  opacity: 0;
+  visibility: hidden;
   -webkit-backface-visibility: hidden;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -1507,7 +1511,8 @@ Layout
     padding: 10px 22px;
   }
 }
-.c-modal__dd input::-ms-input-placeholder { /* Edge 12-18 */
+.c-modal__dd input::-ms-input-placeholder {
+  /* Edge 12-18 */
   color: #94A3B8;
 }
 .c-modal__dd input::-webkit-input-placeholder {
@@ -2652,15 +2657,15 @@ Utility
 }
 .cms-sidebar__nav li.is-active a {
   color: #fff;
-  background: rgba(0, 0, 0, 0.5019607843);
-  -webkit-box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
-          box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
+  background: #00000080;
+  -webkit-box-shadow: 0px 4px 24px 0px #2000000A;
+          box-shadow: 0px 4px 24px 0px #2000000A;
 }
 .cms-sidebar__nav li:hover a {
   color: #fff;
-  background: rgba(0, 0, 0, 0.5019607843);
-  -webkit-box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
-          box-shadow: 0px 4px 24px 0px rgba(32, 0, 0, 0.0392156863);
+  background: #00000080;
+  -webkit-box-shadow: 0px 4px 24px 0px #2000000A;
+          box-shadow: 0px 4px 24px 0px #2000000A;
 }
 .cms-content {
   width: calc(100% - 330px);
