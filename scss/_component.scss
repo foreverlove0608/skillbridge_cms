@@ -208,6 +208,12 @@ Component
 			@include smooth-transition;
 		}
 	}
+	&--blue{
+		max-width: 192px;
+		height: 40px;
+		background: #0072F8;
+		color: #fff;
+	}
 }
 
 .c-btn__delete{

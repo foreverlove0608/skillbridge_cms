@@ -580,11 +580,14 @@ Layout
 		&__ttl{
 			text-align: left;
 			@include font-size(16);
+			padding: 0 24px 12px;
+			margin-bottom: 0;
+			border-bottom: 1px solid #E2E8F0;
 		}
 		&__wp{
 			max-width: 447px;
-			padding: 12px 24px;
-			border-radius: 16px;	
+			padding: 12px 0;
+			border-radius: 16px;
 		}
 		&__form{
 			position: relative;
@@ -592,9 +595,17 @@ Layout
 		&__close{
 			position: absolute;
 			top: 0;
-			right: -10px;
+			right: 24px;
 			cursor: pointer;
 			@include fn-hover;
+		}
+		&__desc{
+			padding: 25px 0;
+			border-bottom: 1px solid #E2E8F0;
+		}
+		&__control{
+			margin-top: 15px;
+			margin-right: 24px;
 		}
 	}
 }
