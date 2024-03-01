@@ -378,3 +378,12 @@ jQuery(function() {
 	  });
 	});
   });
+
+
+
+
+
+  $('.btn-acc').click(function () {
+	$(this).parent().next().find('.master-datasub').slideToggle();
+	$(this).toggleClass('is-active');
+  })
