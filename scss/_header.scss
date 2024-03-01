@@ -39,7 +39,7 @@
 			&:nth-child(1){
 				a{
 					&::before{
-						background: url(../img/common/ico-sidebar.png) no-repeat center/100%;
+						background: url(../img/common/ico-sidebar-01.png) no-repeat center/100%;
 					}
 				}
 				&.is-active{
@@ -149,7 +149,18 @@
 				}
 			}
 			&:nth-child(9){
-				
+				a{
+					&::before{
+						background: url(../img/common/ico-sidebar-9.png) no-repeat center/100%;
+					}
+				}
+				&.is-active{
+					a{
+						&::before{
+							background: url(../img/common/ico-sidebar-9-active.png) no-repeat center/100%;
+						}
+					}
+				}
 			}
 			&.is-active{
 				a{

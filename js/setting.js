@@ -383,7 +383,15 @@ jQuery(function() {
 
 
 
-  $('.btn-acc').click(function () {
-	$(this).parent().next().find('.master-datasub').slideToggle();
+//   $('.btn-acc').click(function () {
+// 	$(this).parent().next().find('.master-datasub').slideToggle();
+// 	$(this).toggleClass('is-active');
+//   })
+
+
+  $('.js-acc02').click(function () {
+	var data_acc = $(this).attr('data-acc');
+	console.log(data_acc);
+	$(this).parent().find('.' + data_acc).slideToggle();
 	$(this).toggleClass('is-active');
   })

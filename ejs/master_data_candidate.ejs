@@ -4,12 +4,12 @@
 		<%- include('common/_header'); %>
 		<div class="master-data">
 			<ul class="master-data__sidebar">
-				<li><a href="#">業務要約</a></li>
+				<li><a href="/master_data/">業務要約</a></li>
 				<li><a href="#">得意とする分野・スキル</a></li>
 				<li><a href="#">PCスキル/テクニカルスキル</a></li>
 				<li><a href="#">資格</a></li>
-				<li><a href="#">Candidate status</a></li>
-				<li class="is-active"><a href="#">Contact Us Status</a></li>
+				<li class="is-active"><a href="/master_data/candidate.html">Candidate status</a></li>
+				<li><a href="/master_data/contact.html">Contact Us Status</a></li>
 			</ul>
 			<div class="master-data__content">
 				<div class="master-data__heading">
@@ -23,14 +23,14 @@
 						<table>
 							<tr>
 								<th>STT</th>
-								<th>Status tiếng Nhật</th>
-								<th>Status tiếng Việt</th>
+								<th>Tiếng Nhật</th>
+								<th>Tiếng Việt</th>
 								<th>Hành động</th>
 							</tr>
 							<tr>
 								<td>1</td>
-								<td>Status 1</td>
-								<td>Status 1</td>
+								<td>メールアドレス </td>
+								<td>Email</td>
 								<td>
 									<button class="btn-action"></button>
 									<ul class="action-content">
@@ -41,8 +41,44 @@
 							</tr>
 							<tr>
 								<td>2</td>
-								<td>Status 2</td>
-								<td>Status 2</td>
+								<td>都市</td>
+								<td>Số điện thoại</td>
+								<td>
+									<button class="btn-action"></button>
+									<ul class="action-content">
+										<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+										<li class="action-content__delete"><a href="#">Xoá</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>電話番号</td>
+								<td>Tỉnh/ Thành phố</td>
+								<td>
+									<button class="btn-action"></button>
+									<ul class="action-content">
+										<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+										<li class="action-content__delete"><a href="#">Xoá</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>日本で働く希望がありますか</td>
+								<td>Mong muốn làm việc tại Nhật</td>
+								<td>
+									<button class="btn-action"></button>
+									<ul class="action-content">
+										<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+										<li class="action-content__delete"><a href="#">Xoá</a></li>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>希望給料</td>
+								<td>Mức lương mong muốn</td>
 								<td>
 									<button class="btn-action"></button>
 									<ul class="action-content">
@@ -87,7 +123,7 @@
 <div class="c-modal create-company" id="add-skillsub">
 	<div class="c-modal__wp">
 		<form action="" method="post" class="c-modal__form">
-			<h3 class="c-modal__ttl">Thêm mới kỹ năng con cho サーバ</h3>
+			<h3 class="c-modal__ttl">Thêm mới trạng thái ứng viên</h3>
 			<div class="create-company__wp">
 				<dl class="create-company__field create-company__field--full">
 					<dt class="create-company__field-label"><span>*</span>Lĩnh vực/kỹ năng chuyên môn</dt>
@@ -109,9 +145,9 @@
 	<div class="c-modal__wp">
 		<form action="" method="post" class="c-modal__form">
 			<span class="c-modal__close"><img src="../img/common/x-close.png" alt="" width="24"></span>
-			<h3 class="c-modal__ttl">Xoá trạng thái Contact Us</h3>
+			<h3 class="c-modal__ttl">Xoá trạng thái ứng viên</h3>
 			<div class="c-modal__desc">
-				Bạn có chắc chắn muốn xoá trạng thái Contact Us này không ?
+				Bạn có chắc muốn xoá trạng thái ứng viên không?
 			</div>
 			<div class="c-modal__control">
 				<button class="c-btn__01 c-btn__01--gray js-cancel">いいえ</button>

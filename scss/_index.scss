@@ -2,4 +2,10 @@
 
 .system-page{
     padding: 24px 30px;
+    min-height: 100vh;
+    &__ttl{
+        @include font-size(20);
+        font-weight: 600;
+        margin-bottom: 15px;
+    }
 }
