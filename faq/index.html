@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
 		<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
-		<title>Thêm mới ứng viên</title>
+		<title>Câu hỏi thường gặp</title>
 		<meta name="description" content="">
 		<meta name="format-detection" content="telephone=no">
 		<link rel="shortcut icon" href="../favicon.ico">
@@ -20,16 +20,16 @@
 						<li class="cms-sidebar__nav-item"><a href="/manpower/">Công ty Nhật cần người</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/manpower_02/">Công ty cung ứng nhân lực</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/candidate/">Danh sách ứng viên</a></li>
-						<li class="cms-sidebar__nav-item"><a href="/faq/">Câu hỏi thường gặp</a></li>
-						<li class="cms-sidebar__nav-item"><a href="/template/">Quản lý template</a></li>
+						<li class="cms-sidebar__nav-item is-active"><a href="/faq/">Câu hỏi thường gặp</a></li>
+						<li class="cms-sidebar__nav-item"><a href="/recruitment/">Quản lý template</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/contact/">Quản lý Contact Us</a></li>
-						<li class="cms-sidebar__nav-item"><a href="/data/">Master data</a></li>
+						<li class="cms-sidebar__nav-item"><a href="/master_data/">Master data</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/system/">Cài đặt hệ thống</a></li>
 					</ul>
 				</div>
 				<div class="cms-content">
 					<div class="cms-heading">
-						<h2 class="cms-heading__ttl">Dashboard</h2>
+						<h2 class="cms-heading__ttl">Câu hỏi thường gặp</h2>
 						<ul class="cms-heading__control">
 							<li class="cms-heading__control-notification"><a href="#"><img src="../img/common/icon-notification.png" alt="" width="40"></a></li>
 							<li class="cms-heading__control-notification"><a href="#"><img src="../img/common/vn.png" alt="" width="24"></a></li>
@@ -71,57 +71,61 @@
 						<div class="tabs-content current" id="vi">
 							<div class="cms-wrapper">
 								<div class="c-table c-table--faq">
-									<table>
-										<tr>
-											<th></th>
-											<th>STT</th>
-											<th>Câu hỏi</th>
-											<th>Câu trả lời</th>
-											<th>Thời gian tạo</th>
-											<th>Hành động</th>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
+									<table id="sortableTable">
+										<thead>
+											<tr>
+												<th></th>
+												<th>STT</th>
+												<th>Câu hỏi</th>
+												<th>Câu trả lời</th>
+												<th>Thời gian tạo</th>
+												<th>Hành động</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td class="order">1</td>
+												<td><a href="#" class="txt-link">Question 1</a></td>
+												<td>Answer 1</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="order">2</td>
+												<td><a href="#" class="txt-link">Question 2</a></td>
+												<td>Answer 2</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="order">3</td>
+												<td><a href="#" class="txt-link">Question 3</a></td>
+												<td>Answer 3</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
 									</table>
 								</div>
 								<div class="c-modal create-company" id="add-faq">
@@ -178,57 +182,61 @@
 						<div class="tabs-content" id="jp">
 							<div class="cms-wrapper">
 								<div class="c-table c-table--faq">
-									<table>
-										<tr>
-											<th></th>
-											<th>STT</th>
-											<th>Câu hỏi</th>
-											<th>Câu trả lời</th>
-											<th>Thời gian tạo</th>
-											<th>Hành động</th>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
-										<tr>
-											<td></td>
-											<td>1</td>
-											<td><a href="#" class="txt-link">Question 1</a></td>
-											<td>Answer 1</td>
-											<td>01/01/2022 12:21</td>
-											<td>
-												<button class="btn-action"></button>
-												<ul class="action-content">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</td>
-										</tr>
+									<table id="sortableTable">
+										<thead>
+											<tr>
+												<th></th>
+												<th>STT</th>
+												<th>Câu hỏi</th>
+												<th>Câu trả lời</th>
+												<th>Thời gian tạo</th>
+												<th>Hành động</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td></td>
+												<td class="order">1</td>
+												<td><a href="#" class="txt-link">Question 1</a></td>
+												<td>Answer 1</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="order">2</td>
+												<td><a href="#" class="txt-link">Question 2</a></td>
+												<td>Answer 2</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+											<tr>
+												<td></td>
+												<td class="order">3</td>
+												<td><a href="#" class="txt-link">Question 3</a></td>
+												<td>Answer 3</td>
+												<td>01/01/2022 12:21</td>
+												<td>
+													<button class="btn-action"></button>
+													<ul class="action-content">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</td>
+											</tr>
+										</tbody>
 									</table>
 								</div>
 								<div class="c-modal create-company" id="add-faq">
@@ -287,6 +295,7 @@
 			</div>
 		</main>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="../js/jquery-ui.min.js"></script>
 		<script src="../js/setting.js"></script>
 	</body>
 </html>

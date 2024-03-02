@@ -8,7 +8,7 @@
 	@include flex(between, center);
 	padding: 16px 30px;
 	&__tabs{
-		max-width: 324px;
+		max-width: 360px;
 		width: 100%;
 		@include flex(0, 0);
 		border-bottom: 1px solid #E2E8F0;
@@ -90,6 +90,7 @@
 				// width: calc((480 / 1530) * 100%);
 				width: 480px;
 				position: relative;
+				cursor: pointer;
 				@include p-before(20px, 20px){
 					background: url(../img/common/search-normal.png) no-repeat center/100%;
 					top: calc(50% - 10px);
@@ -97,6 +98,7 @@
 				}
 				.form-control{
 					padding-left: 44px;
+					cursor: pointer;
 				}
 			}
 			&--wish{
@@ -209,6 +211,66 @@
 		margin-top: 0;
 		img{
 			margin-left: 10px;
+		}
+	}
+}
+
+#upload-file{
+	.c-modal__control{
+		display: block;
+		max-width: 100%;
+		.c-btn__01{
+			width: 100%;
+			&.disable{
+				opacity: .5;
+			}
+		}
+		.txt-link{
+			width: 100%;
+			border: none;
+			outline: 0;
+			text-align: center;
+			background: none;
+			margin-top: 30px;
+			cursor: pointer;
+		}
+	}
+}
+
+.upload-file{
+	&__content{
+		max-width: 520px;
+		width: 100%;
+		margin: 0 auto;
+		position: relative;
+		#file{
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			cursor: pointer;
+		}
+		&-after{
+			box-shadow: 2px 2px 10px 0px #7E91D324;
+			padding: 24px 30px;
+			align-items: center;
+			justify-content: space-between;
+			display: none;
+			border-radius: 16px;
+			button{
+				background: none;
+				outline: 0;
+				border: none;
+				cursor: pointer;
+				@include fn-hover;
+			}
+			.file-name{
+				.txt-link{
+					margin-left: 32px;
+				}
+			}
 		}
 	}
 }

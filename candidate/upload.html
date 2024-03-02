@@ -11,7 +11,7 @@
 		<link type="text/css" rel="stylesheet" href="../css/styles.css">
 	</head>
 	<body>
-		<main id="page-candidate" class="wrapper">
+		<main id="page-candidate_uploadfile" class="wrapper">
 			<div class="cms-main">
 				<div class="cms-sidebar">
 					<h1 class="cms-sidebar__logo"><a href="#"><img src="../img/common/logo.png" alt=""></a></h1>
@@ -19,7 +19,7 @@
 						<li class="cms-sidebar__nav-item"><a href="/dashboard/">Dashboard</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/manpower/">Công ty Nhật cần người</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/manpower_02/">Công ty cung ứng nhân lực</a></li>
-						<li class="cms-sidebar__nav-item is-active"><a href="/candidate/">Danh sách ứng viên</a></li>
+						<li class="cms-sidebar__nav-item"><a href="/candidate/">Danh sách ứng viên</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/faq/">Câu hỏi thường gặp</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/recruitment/">Quản lý template</a></li>
 						<li class="cms-sidebar__nav-item"><a href="/contact/">Quản lý Contact Us</a></li>
@@ -99,7 +99,7 @@
 										<option value="">--</option>
 									</select>
 								</li>
-								<li class="candidate-page__search-field candidate-page__search-field--filter-advended">
+								<li class="candidate-page__search-field candidate-page__search-field--filter-advended js-show-modal" data-modal="fillter">
 									<input type="text" class="form-control" placeholder="Tìm kiếm nâng cao">
 								</li>
 							</ul>
@@ -1046,6 +1046,31 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="c-modal upload-file is-show" id="upload-file">
+				<div class="c-modal__wp">
+					<form action="" method="post" class="c-modal__form">
+						<h3 class="c-modal__ttl">履歴書をアップロード</h3>
+						<div class="upload-file__content">
+							<div class="upload-file__content-before">
+								<label for="file">
+									<img src="../img/common/area-upload.png" alt="">
+								</label>
+								<input type="file" name="" id="file">
+							</div>
+							<div class="upload-file__content-after">
+								<p class="file-name"><img src="../img/common/ico-file.png" alt="" width="40">
+									<span class="txt-link">filedangky_Riko Sato.xlsx</span>
+								</p>
+								<button class="js-remove-file"><img src="../img/common/trash.png" alt="" width="24"></button>
+							</div>
+						</div>
+						<div class="c-modal__control">
+							<a href="#" class="c-btn__01 btn-upload disable">保存</a>
+							<button class="txt-link js-cancel">キャンセル</button>
+						</div>
+					</form>
 				</div>
 			</div>
 		</main>

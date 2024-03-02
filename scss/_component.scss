@@ -149,9 +149,52 @@ Component
 				font-size: c-max-size(15px, 35%);
 			}
 		}
-	}	
+	}
+	&__03{
+		@include fts(24, 33.6);
+		font-weight: 600;
+		background: -webkit-linear-gradient(#F5601B, #FF862A);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		margin-bottom: 12px;
+		@include mq{
+			@include font-size(20);
+		}
+	}
+	&__04{
+		@include font-size(14);
+		font-weight: 600;
+		color: #64748B;
+	}
 }
 
+
+.c-dots{
+    @include fts(16, 22.4);
+    @include mq{
+        @include fts(14, 19.6);  
+    }
+    li{
+        margin-bottom: 10px;
+        @include mq{
+            margin-bottom: 17px;
+        }
+        &:last-of-type{
+            margin-bottom: 0;
+        }
+        ul{
+            padding-left: 47px;
+        }
+    }
+    &--styles02{
+        @include mq{
+            @include fts(16, 22.4);
+            li{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
 
 
 // Common Button style
