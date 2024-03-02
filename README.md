@@ -17,6 +17,7 @@ https://foreverlove0608.github.io/skillbridge_cms/candidate/upload.html
 
 https://foreverlove0608.github.io/skillbridge_cms/contact/
 https://foreverlove0608.github.io/skillbridge_cms/faq/
+
 https://foreverlove0608.github.io/skillbridge_cms/recruitment/
 https://foreverlove0608.github.io/skillbridge_cms/system/
 
