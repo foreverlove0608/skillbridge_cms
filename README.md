@@ -9,11 +9,11 @@ https://foreverlove0608.github.io/skillbridge_cms/company_02/edit.html
 
 
 https://foreverlove0608.github.io/skillbridge_cms/candidate/
-https://foreverlove0608.github.io/skillbridge_cms/candidate/create.html
+https://foreverlove0608.github.io/skillbridge_cms/candidate_create/
 https://foreverlove0608.github.io/skillbridge_cms/candidate/detail.html
 https://foreverlove0608.github.io/skillbridge_cms/candidate/detail02.html
 https://foreverlove0608.github.io/skillbridge_cms/candidate/search.html
-https://foreverlove0608.github.io/skillbridge_cms/candidate/uploadfile.html
+https://foreverlove0608.github.io/skillbridge_cms/candidate/upload.html
 
 https://foreverlove0608.github.io/skillbridge_cms/contact/
 https://foreverlove0608.github.io/skillbridge_cms/faq/
