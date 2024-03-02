@@ -44,6 +44,8 @@ $('.js-show-modal').click(function (e) {
 	$('.c-modal').removeClass('is-show');
 	$('#' + modal_id).addClass('is-show');
 	$('body').addClass('has-modal');
+	$('.c-dropdown').slideUp();
+	$('.action-content').slideUp();
 });
 
 
@@ -383,10 +385,10 @@ jQuery(function() {
 
 
 
-  $('.btn-acc').click(function () {
-	$(this).parent().next().find('.master-datasub').slideToggle();
-	$(this).toggleClass('is-active');
-  })
+//   $('.btn-acc').click(function () {
+// 	$(this).parent().next().find('.master-datasub').slideToggle();
+// 	$(this).toggleClass('is-active');
+//   })
 
 
   $('.js-acc02').click(function () {

@@ -45,7 +45,7 @@
 								</a>
 								<ul class="c-dropdown">
 									<li><a href="#" class="js-show-modal" data-modal="changepass"><img src="../img/common/ico-changepass.png" width="20" alt="">Đổi mật khẩu</a></li>
-									<li><a href="#"><img src="../img/common/password-check.png" width="20" alt="">Cấp lại mật khẩu</a></li>
+									<li><a href="#" class="js-show-modal" data-modal="register"><img src="../img/common/password-check.png" width="20" alt="">Cấp lại mật khẩu</a></li>
 									<li><a href="#" class="js-show-modal" data-modal="form-logout"><img src="../img/common/logout.png" width="20" alt="">Đăng xuất</a></li>
 								</ul>
 							</li>
@@ -69,55 +69,188 @@
 								<button class="c-btn__01 c-btn__01--add js-show-modal" data-modal="add-skill">Tạo mới</button>
 							</div>
 							<div class="cms-wrapper">
-								<div class="tree-view tree-view--styles02">
-									<div class="tree-view__heading">
-										<div></div>
-										<div></div>
-										<div class="stt">STT</div>
-										<div class="skill">Lĩnh vực</div>
-										<div class="action">Hành động</div>
-									</div>
-									<div class="tree-view__content">
-										<div class="tree-view__row">
+								<div class="c-table">
+									<div class="tree-view tree-view--types02">
+										<div class="tree-view__heading">
 											<div class="menu"></div>
-											<div class="btn-acc js-acc02"></div>
-											<div class="stt">1</div>
-											<div class="skill">担当業務</div>
-											<div class="action">
-												<button class="btn-action"></button>
-												<ul class="action-content action-content--lg">
-													<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-													<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
-													<li class="action-content__delete"><a href="#">Xoá</a></li>
-												</ul>
-											</div>
-											<div class="tree-view__acc-content">
-												<div class="tree-view tree-view--level2">
-													<div class="tree-view__heading">
-														<div></div>
-														<div></div>
-														<div class="stt">STT</div>
-														<div class="skill">Kỹ năng</div>
-														<div class="place">Place holder</div>
-														<div class="action">Hành động</div>
-													</div>
-													<div class="tree-view__content">
-														<div class="tree-view__row">
+											<div class="btn-acc"></div>
+											<div class="stt">STT</div>
+											<div class="skill">Lĩnh vực</div>
+											<div class="action">Hành động</div>
+										</div>
+										<div class="tree-view__content">
+											<div class="tree-view__row">
+												<div class="menu"></div>
+												<div class="btn-acc js-acc02" data-acc="acc-content-lv2"></div>
+												<div class="stt">1</div>
+												<div class="skill">サーバ</div>
+												<div class="action">
+													<button class="btn-action"></button>
+													<ul class="action-content action-content--lg">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</div>
+												<div class="tree-view__acc-content acc-content-lv2">
+													<div class="tree-view tree-view--types03 tree-view--level2 tree-view--level2">
+														<div class="tree-view__heading">
 															<div class="menu"></div>
-															<div class="btn-acc"></div>
-															<div class="stt">1</div>
-															<div class="skill">担当業務</div>
-															<div class="place">担当業務についてもうちょっと詳しく書きましょう。<br>例）リーダー/メンバーとしてクライアントとのやり取り経験あり</div>
-															<div class="action">
-																<button class="btn-action"></button>
-																<ul class="action-content action-content--lg">
-																	<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
-																	<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
-																	<li class="action-content__delete"><a href="#">Xoá</a></li>
-																</ul>
+															<div class="skill">Kỹ năng chuyên môn</div>
+															<div class="action">Hành động</div>
+														</div>
+														<div class="tree-view__content">
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">(Windows/Linux)サーバの(要件定義/基本設計/詳細設計/構築/設定/運用保守/維持管理)</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">(Vsphere/Hyper-V)などの仮想サーバの(設計/構築)</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">DB設計・構築</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">製品ベンダとの仕様調整及び調達価格交渉</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
 															</div>
 														</div>
 													</div>
+												</div>
+											</div>
+											<div class="tree-view__row">
+												<div class="menu"></div>
+												<div class="btn-acc js-acc02" data-acc="acc-content-lv2"></div>
+												<div class="stt">2</div>
+												<div class="skill">サーバサイド</div>
+												<div class="action">
+													<button class="btn-action"></button>
+													<ul class="action-content action-content--lg">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</div>
+												<div class="tree-view__acc-content acc-content-lv2">
+													<div class="tree-view tree-view--types03 tree-view--level2 tree-view--level2">
+														<div class="tree-view__heading">
+															<div class="menu"></div>
+															<div class="skill">Kỹ năng chuyên môn</div>
+															<div class="action">Hành động</div>
+														</div>
+														<div class="tree-view__content">
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">(Windows/Linux)サーバの(要件定義/基本設計/詳細設計/構築/設定/運用保守/維持管理)</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">(Vsphere/Hyper-V)などの仮想サーバの(設計/構築)</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">DB設計・構築</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+															<div class="tree-view__row">
+																<div class="menu"></div>
+																<div class="skill">製品ベンダとの仕様調整及び調達価格交渉</div>
+																<div class="action">
+																	<button class="btn-action"></button>
+																	<ul class="action-content action-content--lg">
+																		<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+																		<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+																		<li class="action-content__delete"><a href="#">Xoá</a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="tree-view__row">
+												<div class="menu"></div>
+												<div class="btn-acc no-data" data-acc="acc-content-lv2"></div>
+												<div class="stt">3</div>
+												<div class="skill">ネイティブアプリ</div>
+												<div class="action">
+													<button class="btn-action"></button>
+													<ul class="action-content action-content--lg">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
+												</div>
+											</div>
+											<div class="tree-view__row">
+												<div class="menu"></div>
+												<div class="btn-acc no-data" data-acc="acc-content-lv2"></div>
+												<div class="stt">4</div>
+												<div class="skill">ネットワーク</div>
+												<div class="action">
+													<button class="btn-action"></button>
+													<ul class="action-content action-content--lg">
+														<li class="action-content__edit"><a href="#">Chỉnh sửa</a></li>
+														<li class="action-content__add-skill"><a href="#" class="js-show-modal" data-modal="add-skillsub">Thêm kỹ năng con</a></li>
+														<li class="action-content__delete"><a href="#">Xoá</a></li>
+													</ul>
 												</div>
 											</div>
 										</div>
