@@ -520,7 +520,7 @@ $(document).on('change', 'input[type="file"]', function () {
 });
 
 
-$( "#sortableTable table tbody" ).sortable( {
+$( "#sortableTable tbody" ).sortable( {
 	helper: function(e, tr)
 	  {
 		  var $originals = tr.children();
@@ -534,7 +534,7 @@ $( "#sortableTable table tbody" ).sortable( {
 	  },
 	  update: function( event, ui ) {
 	  $(this).children().each(function(index) {
-			  $(this).find('td.order').html(index)
+			  $(this).find('td.order').html(index + 1)
 	  });
 	}
 });
