@@ -5028,7 +5028,7 @@ Utility
   display: none;
 }
 .tabs-content.current {
-  display: initial;
+  display: block;
 }
 
 .create-candidate {

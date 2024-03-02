@@ -468,10 +468,10 @@ $('.tabs-content input').each(function () {
 		//delete only item white click 
 		$('.btn-detete-selected').click(function () {
 			var _this = $(this).parent().attr('class');
-			console.log($("." + _this).html());
-			$("." + _this).hide();
+			
+			$("." + _this).remove();
 			let data_checkbox = $(this).prev().text();
-			// console.log(data_checkbox);
+			
 			$('.tabs-content input').each(function () {
 				let val_checkbox = $(this).val();
 				if(data_checkbox == val_checkbox){
