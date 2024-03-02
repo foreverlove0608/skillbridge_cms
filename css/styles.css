@@ -5245,6 +5245,7 @@ Utility
   width: 190px;
 }
 .register-form .inner {
+  max-width: 100%;
   width: 100%;
 }
 .register-form .form-group {
