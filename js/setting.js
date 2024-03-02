@@ -299,6 +299,36 @@ $('.js-add-project02').click(function (e) {
 })
 
 
+//Add person
+var id_person = 1;
+$('.js-add-person').click(function (e) {
+	e.preventDefault();
+	id_person++;
+	$(this).before( `<div class="representative-box">
+	<p class="representative-box__label">Người đại diện ` + id_person + `</p>
+	<a href="#" class="c-btn__delete representative-box__del">Xoá</a>
+	<div class="representative-box__field">
+		<dl class="representative-box__dl">
+			<dt class="representative-box__dt">Tên người đại diện</dt>
+			<dd class="representative-box__dd"><input type="text" class="form-control" value="" placeholder="Nhập tên người đại diện"></dd>
+		</dl>
+		<dl class="representative-box__dl">
+			<dt class="representative-box__dt">Phương thức liên lạc</dt>
+			<dd class="representative-box__dd"><input type="text" class="form-control" value="" placeholder="Nhập phương thức liên lạc"></dd>
+		</dl>
+		<dl class="representative-box__dl">
+			<dt class="representative-box__dt">Chức danh</dt>
+			<dd class="representative-box__dd"><input type="text" class="form-control" value="" placeholder="Nhập chức danh"></dd>
+		</dl>
+	</div>
+</div>` );
+	$('.representative-box__del').click(function (e) {
+		e.preventDefault();
+		$(this).parent().remove();
+	})
+})
+//-----
+
 
 $('.js-submit-qualifications').click(function (e) {
 	e.preventDefault();
